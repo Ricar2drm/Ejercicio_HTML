@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>Formulario de inscripción 2022-23</h1>
+    <form>
+
+<fieldset class="naranja">
+    <legend>Datos personales</legend>
+    <p>
+    <label for="nombre">Nombre:</label>
+    <input id="nombre" type="text" required>
+</p>
+  <p>
+    <label for="apellido">Apellidos:</label>
+    <input id="apellido" type="text" size="30" required>
+</p>
+<p>
+    <label for="fecha">Fecha de nacimineto:</label>
+    <input id="fecha" min="1930-01-01" max="2023-01-01" type="date" >
+</p>
+<p>
+    <label for="dni">DNI:</label>
+    <input id="dni" minlength="9" maxlength="9" type="text" size="10" required>
+</p>
+<p>
+    <label for="num">Teléfono:</label>
+    <input id="num" type="number" size="12">
+</p>
+<p>
+  
+    <label for="Provincia" disabled>Provincia:</label>
+    
+     <select disabled id="Provincia">
+
+    <option value="murcia">Murcia</option>
+    <option value="zamora">Zamora</option>
+    <option value="madrid" selected>Comunidad de madrid</option>
+  
+</select>
+</p>
+<p>
+    <label for="foto">Selecciona una imagen de perfil:</label>
+    <p></p>
+    <input id="foto" type="file" >
+</p>
+<p>
+    <label for="arch">Adjunta archivos obligatorios:</label>
+    <p></p>
+    <input id="arch" type="file" multiple >
+</p>
+</fieldset>
+
+
+<fieldset>
+    <legend>Datos Curso de inscripción</legend>
+    <p>
+        <label for="curso">Curso:</label>
+        <input id="curso"  type="radio" name="curso" value="primero">Primero
+        <input id="curso"  type="radio" name="curso" value="segundo">Segundo
+    </p>
+    <label for="ciclos">Ciclo formativo:</label>
+    <select name="ciclos" id="ciclos"> 
+        <optgroup id="gradsup" label ="Grado superior">
+            <option value="" disabled selected hidden>Elige un ciclo formativo</option>
+    
+            <option value="adminFin">Administracion y Finanzas</option>
+            <option value="Adminsis">Administración de Sistemas Informáticos en Red</option>
+            <option value="DAM">Desarrollo de Aplicaciones multiplataforma</option>
+            <option value="DAW">Desarrollo de Aplicaciones web</option>
+        </optgroup>
+        <optgroup id="gradmed" label ="Grado medio">
+    
+            <option value="gestion" disabled>Gestión administrativa</option>
+            <option value="sistemas">Sistemas microinformaticos</option>
+            <option value="redes">Redes</option>
+          
+        </optgroup>
+        <optgroup id="gradbas" label ="Grado básico">
+    
+            <option value="oficina">Informática de oficina</option>
+            <option value="comunicaciones">Informática y comunicaciones</option>
+            <option value="servicios" disabled>Servicios administrativos</option>
+       
+        </optgroup>
+        </select>
+</fieldset>
+
+
+<fieldset id="accesocampus" class="naranja">
+    <legend>Acceso al campus</legend>
+    <p>
+        <label for="mail" >Email:</label>
+        <input id="mail" placeholder="correo@empresa.com" type="email" required>
+    </p>
+    <p>
+        <label for="pass">Contraseña:</label>
+        <input id="pass" type="password" required>
+    </p>
+</fieldset>
+
+
+<fieldset>
+    <legend>Observaciones</legend>
+<textarea cols="60" rows="6">
+
+
+</textarea>
+</fieldset>
+
+
+<fieldset>
+    <legend>Protección de datos</legend>
+    <input required value="aceptado" type="checkbox">Declaro haber leído y aceptado las condiciones generales del programa y la normativa sobre proteccion de datos</input> 
+</fieldset>
+
+<input type="submit" value="inscribirme">
+<input type="reset" value="resetear datos">
+
+
+
+    </form>
+</body>
+</html>
